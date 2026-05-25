@@ -486,6 +486,8 @@
     .nav-dots { bottom: 88px; }
     .key-hint { display: none; }
     .meta-row { gap: 10px; }
+    /* COPYボタン（約60px幅）との重なり防止 */
+    .code-block { padding-right: 76px; }
 
     /* ── スマホ：縦スライド ── */
     /* デフォルト（非表示）：下から待機 */
@@ -503,7 +505,7 @@
   }
 
   @media (max-width: 380px) {
-    .code-block { font-size: 0.7rem; padding: 18px 14px; }
+    .code-block { font-size: 0.7rem; padding: 18px 76px 18px 14px; }
   }
 
   /* ========== LOADING ANIMATION ========== */
